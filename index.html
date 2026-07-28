@@ -1,13 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>WELCOME</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #575757;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                text-align: center;
+                padding: 1rem;
+                border-top: 1px solid #444;
+            }
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <h1>Subodh Pokhrel</h1>
-  <p>Your home for innovation and crafts of your bar </p>
 
-  <h2>My Projects</h2>
-  <p>Add your projects here.</p>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A simple responsive HTML, CSS, and JavaScript example</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section of your website. You can add text, images, or videos here.</p>
+            <button class="btn" onclick="showMessage()">Click Me</button>
+        </section>
+
+        <section id="about" style="margin-top: 2rem;">
+            <h2>About</h2>
+            <p>This is a simple website template you can customize for your needs.</p>
+        </section>
+
+        <section id="contact" style="margin-top: 2rem;">
+            <h2>Contact</h2>
+            <p>Email: example@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple JavaScript function
+        function showMessage() {
+            alert("Hello! Thanks for visiting my website.");
+        }
+    </script>
+
 </body>
 </html>
