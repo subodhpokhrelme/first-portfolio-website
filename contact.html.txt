@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Subodh Pokhrel</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="experience.html">Experience</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Contact Me
+</h2>
+
+
+
+
+<div class="contact-box">
+
+
+<p>
+I would love to connect and discuss opportunities,
+projects, collaborations or business ideas.
+</p>
+
+
+<br>
+
+
+<p>
+📧 Email:
+<a href="mailto:your@email.com">
+your@email.com
+</a>
+</p>
+
+
+<br>
+
+
+<p>
+💼 LinkedIn:
+<a href="#" target="_blank">
+Your LinkedIn Profile
+</a>
+</p>
+
+
+<br>
+
+
+<p>
+📍 Location:
+Melbourne, Australia
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Send A Message
+</h2>
+
+
+
+<div class="card" style="margin:auto; max-width:600px;">
+
+
+
+<form>
+
+
+<label>
+Name
+</label>
+
+<br>
+
+<input type="text" 
+placeholder="Your Name"
+style="width:100%; padding:12px; margin:10px 0;">
+
+
+<br>
+
+
+<label>
+Email
+</label>
+
+<br>
+
+<input type="email" 
+placeholder="Your Email"
+style="width:100%; padding:12px; margin:10px 0;">
+
+
+<br>
+
+
+<label>
+Message
+</label>
+
+<br>
+
+
+<textarea 
+placeholder="Write your message..."
+style="width:100%; height:150px; padding:12px; margin:10px 0;">
+</textarea>
+
+
+<br>
+
+
+<button class="btn" type="submit">
+Send Message
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Subodh Pokhrel | Portfolio
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>

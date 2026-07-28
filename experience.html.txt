@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Experience | Subodh Pokhrel</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="experience.html">Experience</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+
+
+
+<section>
+
+<h2 class="title">
+Professional Experience
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<h3>
+Bar Supervisor
+</h3>
+
+<h4>
+Slices Family Restaurant
+</h4>
+
+
+<p>
+<strong>Role:</strong> Bar Supervisor / Head Bartender
+</p>
+
+
+<p>
+Managing daily bar operations, ensuring excellent customer service,
+training staff, maintaining inventory and supporting smooth restaurant
+operations.
+</p>
+
+
+<br>
+
+
+<p>
+<strong>Responsibilities:</strong>
+</p>
+
+
+<p>
+✔ Supervising bartenders and floor staff
+<br>
+✔ Preparing cocktails and beverages
+<br>
+✔ Stock control and ordering
+<br>
+✔ Maintaining health and safety standards
+<br>
+✔ Creating positive customer experiences
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Bar Manager
+</h3>
+
+<h4>
+Demazzi Essendon
+</h4>
+
+
+<p>
+<strong>Role:</strong> Bar Manager
+</p>
+
+
+<p>
+Responsible for managing beverage operations, developing drink menus,
+leading a team and improving overall bar performance.
+</p>
+
+
+<br>
+
+
+<p>
+<strong>Responsibilities:</strong>
+</p>
+
+
+<p>
+✔ Managed daily bar operations
+<br>
+✔ Developed cocktail menus
+<br>
+✔ Trained new team members
+<br>
+✔ Managed supplier relationships
+<br>
+✔ Controlled inventory and costs
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Entrepreneurial Projects
+</h3>
+
+
+<h4>
+Winning Horse & Hawaaz Apparels
+</h4>
+
+
+<p>
+Developing clothing and apparel business concepts focusing on branding,
+design, custom printing and customer-focused solutions.
+</p>
+
+
+<p>
+✔ Brand development
+<br>
+✔ Product ideas
+<br>
+✔ Marketing concepts
+<br>
+✔ Business planning
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Professional Strengths
+</h2>
+
+
+
+<div class="card" style="margin:auto; max-width:700px;">
+
+
+<p>
+My experience has helped me develop strong communication skills,
+leadership ability and the confidence to manage teams in fast-paced
+environments. I enjoy solving problems and improving business operations.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Subodh Pokhrel | Portfolio
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
