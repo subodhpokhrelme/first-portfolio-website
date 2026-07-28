@@ -3,129 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Subodh Pokhrel | Portfolio</title>
+
     <style>
-        /* Reset some default browser styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
+            background: #f5f5f5;
             color: #333;
         }
 
         header {
-            background: #007BFF;
+            background: #111;
             color: white;
-            padding: 1rem 0;
+            padding: 60px 20px;
             text-align: center;
         }
 
+        header h1 {
+            font-size: 45px;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #ddd;
+        }
+
         nav {
-            background: #333;
-            display: flex;
-            justify-content: center;
+            background: #222;
+            padding: 15px;
+            text-align: center;
         }
 
         nav a {
             color: white;
-            padding: 0.75rem 1.5rem;
             text-decoration: none;
+            margin: 0 15px;
         }
 
         nav a:hover {
-            background: #575757;
+            color: gold;
         }
 
-        main {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
+        section {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .about {
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #111;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #111;
+            color: white;
+        }
+
+        .contact a {
+            color: gold;
+            text-decoration: none;
         }
 
         footer {
-            background: #333;
-            color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        /* Responsive design */
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-            nav a {
-                text-align: center;
-                padding: 1rem;
-                border-top: 1px solid #444;
-            }
-        }
-
-        /* Button styling */
-        .btn {
-            display: inline-block;
-            background: #007BFF;
+            padding: 15px;
+            background: #000;
             color: white;
-            padding: 0.5rem 1rem;
-            border: none;
-            cursor: pointer;
-            margin-top: 1rem;
-            border-radius: 4px;
         }
 
-        .btn:hover {
-            background: #0056b3;
+        button {
+            padding: 12px 25px;
+            background: gold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
         }
+
+        button:hover {
+            background: orange;
+        }
+
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>A simple responsive HTML, CSS, and JavaScript example</p>
-    </header>
+<header>
+    <h1>Subodh Pokhrel</h1>
+    <p>Hospitality Professional | Entrepreneur | IT Enthusiast</p>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <button onclick="location.href='#contact'">
+        Contact Me
+    </button>
+</header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of your website. You can add text, images, or videos here.</p>
-            <button class="btn" onclick="showMessage()">Click Me</button>
-        </section>
 
-        <section id="about" style="margin-top: 2rem;">
-            <h2>About</h2>
-            <p>This is a simple website template you can customize for your needs.</p>
-        </section>
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <section id="contact" style="margin-top: 2rem;">
-            <h2>Contact</h2>
-            <p>Email: example@example.com</p>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
-    </footer>
+<section id="about">
 
-    <script>
-        // Simple JavaScript function
-        function showMessage() {
-            alert("Hello! Thanks for visiting my website.");
-        }
-    </script>
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+I am a passionate hospitality professional with experience in bar management,
+team leadership and customer service. I enjoy creating memorable experiences
+for customers while continuously developing my skills in technology and business.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Bar Supervisor</h3>
+<p>
+Slices Family Restaurant<br>
+Managing daily bar operations, staff coordination,
+inventory control and customer experience.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Bar Manager</h3>
+<p>
+Demazzi Essendon<br>
+Managed beverage operations, created cocktail menus,
+trained staff and improved sales performance.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Entrepreneur</h3>
+<p>
+Founder of apparel concepts including Winning Horse
+and Hawaaz Apparels.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills" style="text-align:center;">
+
+<span>Bar Management</span>
+<span>Team Leadership</span>
+<span>Customer Service</span>
+<span>Inventory Management</span>
+<span>Marketing</span>
+<span>HTML/CSS</span>
+<span>Business Development</span>
+
+</div>
+
+</section>
+
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Winning Horse</h3>
+<p>
+A premium clothing brand concept focused on
+elegant and vintage fashion.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Hawaaz Apparels</h3>
+<p>
+Wholesale custom apparel printing business
+for brands and retailers.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>
+A personal website showcasing my experience,
+skills and projects.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>
+Email: Subodh.pokhrel233@gmail.com
+</p>
+
+<p>
+LinkedIn: Your Profile Link
+</p>
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 Subodh Pokhrel. All Rights Reserved.
+</p>
+
+</footer>
+
 
 </body>
 </html>
