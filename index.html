@@ -1,157 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subodh Pokhrel | Hospitality Professional, Entrepreneur & IT Specialist</title>
+    <meta name="description" content="Portfolio of Subodh Pokhrel — Hospitality leader, Tech enthusiast, and founder of Winning Horse and Hawaaz Apparels.">
+    
+    <!-- Open Graph for Professional Social Media Previews -->
+    <meta property="og:title" content="Subodh Pokhrel | Personal Portfolio">
+    <meta property="og:description" content="Hospitality Management, Business Entrepreneurship & IT Solutions in Australia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://subodhpokhrel.com.au/">
+    <meta property="og:image" content="images/profile.jpg">
 
-    <title>Subodh Pokhrel | Portfolio</title>
+    <style>
+        :root {
+            --primary: #1e293b;     /* Deep slate blue */
+            --accent: #2563eb;      /* Clean corporate blue */
+            --text: #334155;        /* Soft readable body text */
+            --bg-light: #f8fafc;    /* Clean off-white background */
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: var(--text);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1.25rem;
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .bio {
+            max-width: 650px;
+            margin: 0 auto 2rem;
+            font-size: 1.05rem;
+        }
+
+        /* Buttons */
+        .cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.6rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background-color: #ffffff;
+            color: var(--primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-light);
+        }
+
+        /* Journey / Features Section */
+        .journey {
+            max-width: 1000px;
+            margin: 5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .journey h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 3rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-top: 1px solid var(--border);
+            background: #ffffff;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .cta-group { flex-direction: column; }
+            nav { gap: 1rem; }
+        }
+    </style>
 </head>
-
-
 <body>
 
-
-<nav>
-
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-
-</nav>
-
-
-
-<section class="hero">
-
-
-<div>
-
-
-<!-- Add your image inside images folder -->
-<img src="images/profile.jpg" 
-class="profile" 
-alt="Subodh Profile">
-
-
-<h1>Subodh Pokhrel</h1>
-
-
-<p>
-Hospitality Professional | Entrepreneur | IT Enthusiast
-</p>
-
-
-<p>
-Creating memorable customer experiences while building
-innovative business ideas through technology and creativity.
-</p>
-
-
-
-<a href="contact.html" class="btn">
-Contact Me
-</a>
-
-
-<a href="resume.pdf" class="btn">
-Download Resume
-</a>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section>
-
-
-<h2 class="title">
-My Journey
-</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Hospitality
-</h3>
-
-<p>
-Experienced bar supervisor and manager with skills in
-team leadership, beverage operations, customer service,
-and business management.
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>
-Technology
-</h3>
-
-<p>
-Passionate about IT, website development and using
-technology to create better business solutions.
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>
-Entrepreneurship
-</h3>
-
-<p>
-Developing creative business concepts including
-Winning Horse and Hawaaz Apparels.
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<footer>
-
-<p>
-© 2026 Subodh Pokhrel | Portfolio
-</p>
-
-</footer>
-
-
+    <header>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/profile.jpg" alt="Subodh Pokhrel Headshot">
+            <h1>Subodh Pokhrel</h1>
+            <p class="tagline">Hospitality Leader | Entrepreneur | Tech Enthusiast</p>
+            <p class="bio">
+                Optimizing hospitality operations through strong team leadership while building modern, technology-driven business ventures.
+            </p>
+            
+            <div class="cta-group">
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">View Resume</a>
+            </div>
+        </section>
+
+        <section class="journey">
+            <h2>Core Expertise & Ventures</h2>
+            <div class="cards-grid">
+                
+                <article class="card">
+                    <h3>Hospitality Operations</h3>
+                    <p>
+                        Proven experience in high-volume venue management, beverage control, customer experience design, and leading high-performing front-of-house teams.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Technology & Web</h3>
+                    <p>
+                        Bridging operations and tech by leveraging modern web development, software integration, and digital tools to solve everyday business bottlenecks.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Entrepreneurship</h3>
+                    <p>
+                        Founder and creator behind brand concepts including <strong>Winning Horse</strong> and <strong>Hawaaz Apparels</strong>, focusing on market fit, product branding, and execution.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Subodh Pokhrel. All rights reserved.</p>
+    </footer>
 
 </body>
-
 </html>
