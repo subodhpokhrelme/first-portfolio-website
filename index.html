@@ -3,58 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subodh Pokhrel | Hospitality Professional, Entrepreneur & IT Specialist</title>
-    <meta name="description" content="Portfolio of Subodh Pokhrel — Hospitality leader, Tech enthusiast, and founder of Winning Horse and Hawaaz Apparels.">
-    
-    <!-- Open Graph for Professional Social Media Previews -->
-    <meta property="og:title" content="Subodh Pokhrel | Dream will come true">
-    <meta property="og:description" content="Events Management, handling, and Printing services across Melbourne. ">
-    <meta property="og:type" content="Web">
-    <meta property="og:url" content="https://subodhpokhrel.com.au/">
-    <meta property="og:image" content="profile.jpeg.png">
+    <title>Subodh Pokhrel | Hospitality Professional & Entrepreneur</title>
+    <meta name="description" content="Official portfolio of Subodh Pokhrel — Hospitality leader, Tech enthusiast, and founder of Winning Horse and Hawaaz Apparels.">
 
     <style>
-        /* Logo Container */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-/* Initial Badge Icon ("SP") */
-.logo-badge {
-  background: var(--primary); /* Deep slate background */
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  padding: 0.35rem 0.6rem;
-  border-radius: 6px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-/* Main Name Text ("Subodh Pokhrel") */
-.logo-text {
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: -0.02em;
-}
-
-/* Hover Effect for Visual Polish */
-.logo:hover .logo-badge {
-  background: var(--accent); /* Switches to blue on hover */
-  transform: translateY(-1px);
-}
         :root {
-            --primary: #1e293b;     /* Deep slate blue */
-            --accent: #2563eb;      /* Clean corporate blue */
-            --text: #334155;        /* Soft readable body text */
-            --bg-light: #f8fafc;    /* Clean off-white background */
-            --card-bg: #ffffff;
-            --border: #e2e8f0;
+            --primary: #0f172a;      /* Slate black for clear titles */
+            --accent: #2563eb;       /* Professional royal blue */
+            --text-body: #334155;    /* Soft charcoal for easy reading */
+            --bg-light: #f8fafc;     /* Bright, clean off-white background */
+            --card-bg: #ffffff;      /* Crisp white for cards */
+            --border: #e2e8f0;       /* Subtle divider line color */
+            --container-max: 1000px; /* Standard width for content */
         }
 
         * {
@@ -64,18 +24,14 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--text-body);
             background-color: var(--bg-light);
             line-height: 1.6;
         }
 
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 1.25rem;
+        /* Top Navigation Header */
+        header {
             background: #ffffff;
             border-bottom: 1px solid var(--border);
             position: sticky;
@@ -83,10 +39,20 @@
             z-index: 100;
         }
 
+        nav {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            display: flex;
+            justify-content: center; /* Initial alignment, can adjust to space-between later if needed */
+            gap: 2rem;
+            padding: 1.2rem 1rem;
+        }
+
         nav a {
-            text-decoration: calibri;
+            text-decoration: none;
             color: var(--primary);
             font-weight: 600;
+            font-size: 0.95rem;
             transition: color 0.2s ease;
         }
 
@@ -94,27 +60,28 @@
             color: var(--accent);
         }
 
-        /* Hero Section */
+        /* Main Hero Section - Now two columns */
         .hero {
-            max-width: 900px;
-            margin: 4rem auto;
+            max-width: var(--container-max);
+            margin: 5rem auto 4rem;
             padding: 0 1.5rem;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
         }
 
-        .hero img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ffffff;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            margin-bottom: 1.5rem;
+        /* Hero Left: Text Content */
+        .hero-content {
+            flex: 1 1 50%;
+            text-align: left;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 3rem; /* Larger name */
             color: var(--primary);
+            font-weight: 800;
+            letter-spacing: -0.02em;
             margin-bottom: 0.5rem;
         }
 
@@ -122,28 +89,46 @@
             font-size: 1.2rem;
             color: var(--accent);
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .bio {
-            max-width: 650px;
-            margin: 0 auto 2rem;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
+            color: var(--text-body);
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        /* Hero Right: Profile Image */
+        .hero-image {
+            flex: 1 1 40%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .profile-img {
+            width: 320px; /* Big picture size */
+            height: 320px;
+            border-radius: 50%; /* Circle shape, change to e.g. 12px for square */
+            object-fit: cover;
+            border: 6px solid #ffffff; /* Thicker professional border */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
         }
 
         /* Buttons */
         .cta-group {
             display: flex;
-            justify-content: center;
-            gap: 1rem;
+            justify-content: flex-start;
+            gap: 1.2rem;
         }
 
         .btn {
             display: inline-block;
             padding: 0.8rem 1.6rem;
-            border-radius: 6px;
+            border-radius: 8px; /* Slightly smoother corners */
             text-decoration: none;
             font-weight: 600;
+            font-size: 1rem;
             transition: all 0.2s ease;
         }
 
@@ -154,6 +139,7 @@
 
         .btn-primary:hover {
             background-color: #1d4ed8;
+            transform: translateY(-2px); /* Slight lift on hover */
         }
 
         .btn-secondary {
@@ -164,16 +150,17 @@
 
         .btn-secondary:hover {
             background-color: var(--bg-light);
+            border-color: #d1d5db;
         }
 
-        /* Journey / Features Section */
-        .journey {
-            max-width: 1000px;
-            margin: 5rem auto;
+        /* Overview Section */
+        .overview {
+            max-width: var(--container-max);
+            margin: 4rem auto 6rem;
             padding: 0 1.5rem;
         }
 
-        .journey h2 {
+        .overview h2 {
             text-align: center;
             font-size: 2rem;
             color: var(--primary);
@@ -182,37 +169,70 @@
 
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
         .card {
             background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 8px;
+            padding: 2.5rem;
+            border-radius: 10px;
             border: 1px solid var(--border);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
         }
 
         .card h3 {
             color: var(--primary);
-            margin-bottom: 0.75rem;
-            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
         }
 
-        /* Footer */
+        .card p {
+            font-size: 1rem;
+            color: var(--text-body);
+        }
+
+        /* Simple Footer */
         footer {
             text-align: center;
             padding: 2.5rem 1rem;
             border-top: 1px solid var(--border);
             background: #ffffff;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            color: #64748b;
         }
 
-        /* Mobile Optimization */
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 2rem; }
-            .cta-group { flex-direction: column; }
+        /* Responsive Mobile Tweak */
+        @media (max-width: 850px) {
+            .hero {
+                flex-direction: column-reverse; /* Put image above text on small screens */
+                text-align: center;
+                gap: 2rem;
+                margin-top: 3rem;
+            }
+            .hero-content {
+                flex: 1 1 100%;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .hero-image {
+                flex: 1 1 100%;
+                justify-content: center;
+            }
+            .profile-img {
+                width: 200px;
+                height: 200px;
+            }
+            .hero h1 { font-size: 2.2rem; }
+            .cta-group { justify-content: center; width: 100%; }
             nav { gap: 1rem; }
         }
     </style>
@@ -230,42 +250,51 @@
     </header>
 
     <main>
+        <!-- Hero Section - Two columns -->
         <section class="hero">
-            <img src="profile.jpeg.png" alt="SP">
-            <h1>Subodh Pokhrel</h1>
-            <p class="tagline">Mixologist | Entrepreneur | Printing services</p>
-            <p class="bio">
-                Optimizing hospitality operations through strong team leadership while building modern, technology-driven business ventures.
-            </p>
-            
-            <div class="cta-group">
-                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-                <a href="resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">View Resume</a>
+            <!-- Left: Text Content -->
+            <div class="hero-content">
+                <h1>Subodh Pokhrel</h1>
+                <p class="tagline">Hospitality Leader | Entrepreneur | Tech Enthusiast</p>
+                <p class="bio">
+                    Optimizing hospitality operations through strong team leadership while building modern, technology-driven business ventures.
+                </p>
+                
+                <div class="cta-group">
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">View Resume</a>
+                </div>
+            </div>
+
+            <!-- Right: Profile Image -->
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Subodh Pokhrel" class="profile-img">
             </div>
         </section>
 
-        <section class="journey">
-            <h2>Core Expertise & Ventures</h2>
+        <!-- Highlights Section -->
+        <section class="overview">
+            <h2>Core Pillars</h2>
             <div class="cards-grid">
                 
                 <article class="card">
                     <h3>Hospitality Operations</h3>
                     <p>
-                        Proven experience in high-volume venue management, beverage control, customer experience design, and leading high-performing front-of-house teams.
+                        Proven experience in venue management, beverage operations, customer experience design, and leading high-performing teams.
                     </p>
                 </article>
 
                 <article class="card">
                     <h3>Technology & Web</h3>
                     <p>
-                        Bridging operations and tech by leveraging modern web development, software integration, and digital tools to solve everyday business bottlenecks.
+                        Combining operational experience with modern web development and digital tools to solve everyday business bottlenecks.
                     </p>
                 </article>
 
                 <article class="card">
                     <h3>Entrepreneurship</h3>
                     <p>
-                        Founder and creator behind brand concepts including <strong>Winning Horse</strong> and <strong>Hawaaz Apparels</strong>, focusing on market fit, product branding, and execution.
+                        Founder and creator behind brand concepts including <strong>Winning Horse</strong> and <strong>Hawaaz Apparels</strong>.
                     </p>
                 </article>
 
